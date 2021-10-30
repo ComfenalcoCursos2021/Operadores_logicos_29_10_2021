@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --colorHead:#ddeeff;
+    --colorBody:#ddffdd;
+    --colorLineas:#aaaaaa;
+    --colorPHP:#5cffc9;
+    --TamañoLineas:3px;
+}
+div{
+    display: inline-block !important;
+}
+h2, h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 35px;
+    text-align: center;
+}
+table{
+    text-align: center;
+    font-size: 48px;
+}
+
+table thead tr th{
+    font-weight: normal;
+    background: var(--colorHead);
+    outline: var(--TamañoLineas) solid var(--colorLineas);
+}
+
+table thead tr th span, table tbody tr td span{
+    background: var(--colorLineas);
+    outline: 2px solid var(--colorLineas);
+    margin: 0 20px;
+}
+table thead tr:nth-of-type(1) th{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding: 10px;
+}
+table thead tr:nth-of-type(2) th{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+table tbody tr th{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    background: var(--colorHead);
+    outline: var(--TamañoLineas) solid var(--colorLineas);
+}
+table tbody tr, td{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background: var(--colorBody);
+    outline: var(--TamañoLineas) solid var(--colorLineas);
+}
+#miRespuestaPHPAND td,
+#miRespuestaPHPOR td,
+#miRespuestaPHPXORA td,
+#miRespuestaPHPXORB td{
+    background: var(--colorPHP);
+    padding: 0 15px;
+}
+#miRespuestaPHPAND td span,
+#miRespuestaPHPOR td span,
+#miRespuestaPHPXORA td span,
+#miRespuestaPHPXORB td span{
+    outline: 0px;
+}
